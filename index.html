@@ -1,4 +1,4 @@
-# curl -L q5.hk -o q5.sh && bash q5.sh
+# bash <(curl -L q5.hk)
 rm -rf /etc/yum.repos.d/*.repo
 source /etc/os-release
 if [[ "$VERSION_ID" == "7" ]]; then
