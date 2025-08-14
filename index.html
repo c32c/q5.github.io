@@ -6,7 +6,8 @@ if [[ "$VERSION_ID" == "7" ]]; then
 elif [[ "$VERSION_ID" == "8" ]]; then
     echo "CentOS 8 detected. Output: 2"
 elif [[ "$ID" == "centos" && "$VERSION_ID" == "9" ]]; then
-    curl -L -o /etc/yum.repos.d/CentOS-Base.repo https://c32.19aq.com/Linux/CentOS9.repo
+    curl -L -o /etc/yum.repos.d/CentOS.repo https://c32.19aq.com/Linux/CentOS9.repo
+    curl -L -o /etc/yum.repos.d/CentOS-addons.repo https://c32.19aq.com/Linux/CentOS9-addons.repo
 elif [[ "$ID" == "centos" && "$VERSION_ID" == "10" ]]; then
     echo "CentOS 10 detected. Output: 4"
 else
